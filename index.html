@@ -3,76 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Group Expense Splitter</title>
+    <title>Student Study Planner</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-    <h1>Group Expense Splitter</h1>
-    <p>Split shared expenses and settle up easily</p>
+    <h1>📚 Student Study Planner</h1>
+    <p>Plan your studies, track your tasks and stay organized.</p>
 </header>
 
 <main>
 
     <section class="card">
-        <h2>Create Group</h2>
+        <h2>Add Study Task</h2>
 
-        <input type="text" id="groupName" placeholder="Group name">
+        <input type="text" id="taskInput" placeholder="Enter study task">
 
-        <input type="text" id="memberName" placeholder="Enter member name">
-
-        <button onclick="addMember()">Add Member</button>
-
-        <ul id="memberList"></ul>
-
-        <button onclick="createGroup()">Create Group</button>
-
-        <p id="groupMessage"></p>
-    </section>
-
-
-    <section class="card">
-        <h2>Add Expense</h2>
-
-        <input type="number" id="amount" placeholder="Amount">
-
-        <select id="paidBy">
-            <option value="">Who paid?</option>
+        <select id="subjectInput">
+            <option value="">Select Subject</option>
+            <option value="Web Development">Web Development</option>
+            <option value="Cyber Security">Cyber Security</option>
+            <option value="C Programming">C Programming</option>
+            <option value="Mathematics">Mathematics</option>
+            <option value="Other">Other</option>
         </select>
 
-        <div id="includedMembers"></div>
+        <input type="date" id="dateInput">
 
-        <button onclick="addExpense()">Add Expense</button>
-
-        <p id="expenseMessage"></p>
+        <button onclick="addTask()">Add Task</button>
     </section>
 
-
     <section class="card">
-        <h2>Expense History</h2>
+        <h2>My Study Tasks</h2>
 
-        <div id="expenseHistory">
-            <p>No expenses added yet.</p>
-        </div>
-    </section>
-
-
-    <section class="card">
-        <h2>Balances</h2>
-
-        <div id="balances">
-            <p>Create a group and add expenses to see balances.</p>
-        </div>
-    </section>
-
-
-    <section class="card">
-        <h2>Minimum Settle-Up Plan</h2>
-
-        <div id="settlements">
-            <p>No settlements yet.</p>
+        <div id="taskList">
+            <p>No tasks added yet.</p>
         </div>
     </section>
 

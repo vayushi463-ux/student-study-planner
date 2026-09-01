@@ -13,7 +13,7 @@ header {
     background: #24292f;
     color: white;
     text-align: center;
-    padding: 35px 20px;
+    padding: 40px 20px;
 }
 
 header h1 {
@@ -21,8 +21,8 @@ header h1 {
 }
 
 main {
-    max-width: 900px;
-    margin: 25px auto;
+    max-width: 800px;
+    margin: 30px auto;
     padding: 0 15px;
 }
 
@@ -49,8 +49,8 @@ select {
 }
 
 button {
-    padding: 11px 18px;
-    margin: 8px 5px 8px 0;
+    padding: 11px 20px;
+    margin-top: 8px;
     border: none;
     border-radius: 6px;
     background: #24292f;
@@ -62,34 +62,25 @@ button:hover {
     background: #444;
 }
 
-#memberList {
-    padding-left: 20px;
-}
-
-#includedMembers {
-    margin: 12px 0;
-}
-
-.member-check {
-    display: block;
-    margin: 8px 0;
-}
-
-.expense-item,
-.balance-item,
-.settlement-item {
-    padding: 12px;
-    margin: 8px 0;
-    border-radius: 6px;
+.task {
     background: #f1f3f5;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
 }
 
-.success {
-    color: green;
+.task.completed {
+    opacity: 0.6;
+    text-decoration: line-through;
 }
 
-.error {
-    color: red;
+.task button {
+    margin-right: 5px;
+}
+
+.empty {
+    text-align: center;
+    color: #777;
 }
 
 @media (max-width: 600px) {
